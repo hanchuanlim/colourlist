@@ -53,7 +53,9 @@ function HomeScreen({navigation}) {
   }
 
 
-
+// const screenWidth = Dimensions.get("window").width;
+// const numColumns = 4;
+// const tileSize = screenWidth / numColumns;
 
 
   return (
@@ -77,6 +79,7 @@ function HomeScreen({navigation}) {
         style={{ width: "100%" }}
         data={colorArray}
         renderItem={renderItem}
+        numColumns={4}
         keyExtractor={(item) => item.id}
       />
     </View>
